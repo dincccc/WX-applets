@@ -1,2 +1,10 @@
 <!--miniprogram/pages/begin/begin.wxml-->
-<text>miniprogram/pages/begin/begin.wxml</text>
+<view class="container">
+  <view class="add-new-item">
+    <input placeholder='e.g. 大米'></input>
+    <button>add</button>
+  </view>
+  <view class="item-list" >
+    <view wx:for="{{items}}">{{index}}: {{item.hox}}</view>
+  </view>
+</view>
