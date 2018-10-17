@@ -1,1 +1,8 @@
 /* miniprogram/pages/begin/begin.wxss */
+.add-new-item{
+  display: flex;
+  justify-content: center;
+}
+.add-input{
+  border: 1px solid #ded;
+}

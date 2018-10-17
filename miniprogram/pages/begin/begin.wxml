@@ -1,8 +1,8 @@
 <!--miniprogram/pages/begin/begin.wxml-->
 <view class="container">
   <view class="add-new-item">
-    <input placeholder='e.g. 大米'></input>
-    <button>add</button>
+    <input type="text" class="add-input" placeholder='e.g. 大米' bindinput='getNewItem'></input>
+    <button type="primary" bindtap="addNewItem">add</button>
   </view>
   <view class="item-list" >
     <view wx:for="{{items}}">{{index}}: {{item.hox}}</view>
