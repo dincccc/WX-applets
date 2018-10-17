@@ -19,7 +19,7 @@ Page({
   },
   addNewItem: function(){
     this.setData({
-      items: this.items.push({hox: this.newItem})
+      items: this.items.push("da")
     })
   },
   /**

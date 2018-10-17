@@ -5,6 +5,6 @@
     <button type="primary" bindtap="addNewItem">add</button>
   </view>
   <view class="item-list" >
-    <view wx:for="{{items}}">{{index}}: {{item.hox}}</view>
+    <view wx:for="{{items}}" wx:key="{{index}}">{{index}}: {{item.hox}}</view>
   </view>
 </view>
