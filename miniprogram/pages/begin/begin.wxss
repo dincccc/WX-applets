@@ -1,8 +1,55 @@
 /* miniprogram/pages/begin/begin.wxss */
-.add-new-item{
+.container{
+  background-color: #ccd;
+  padding: 40rpx;
+}
+.add-new-item {
   display: flex;
   justify-content: center;
+  margin: 60rpx 0;
+  width: 100%;
 }
-.add-input{
-  border: 1px solid #ded;
+.add-new-item button{
+  width: 14%;
+}
+
+.add-input {
+  height: 102rpx;
+  width: 86%;
+  border: 2rpx solid #ded;
+  border-radius: 8rpx;
+  background: #fff;
+  padding-left: 8rpx;
+  
+}
+.item-list{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8rpx;
+  padding: 20rpx;
+  width: 100%;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rpx 0;
+  padding: 20rpx;
+  height: 2.5rem;
+  line-height: 2rem;
+  border-radius: 8rpx;
+  background: #0b7baf;
+  color: rgb(239, 241, 233);
+  text-align: left;
+
+}
+.item image{
+    width: 40rpx;
+    height: 40rpx;
+    border: 2rpx solid #fff;
+    border-radius: 50%;
+    padding: 6rpx;
+    background: #fff;
+    margin-right: 10rpx;
 }

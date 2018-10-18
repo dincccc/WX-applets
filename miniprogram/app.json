@@ -8,8 +8,8 @@
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
-    "pages/begin/begin",
-    "pages/end/end"
+    "pages/end/end",
+    "pages/begin/begin"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -21,17 +21,19 @@
   "tabBar": {
     "color": "#00f",
     "selectedColor": "#0f0",
-    "list": [{
-      "pagePath": "pages/begin/begin",
-      "text": "开始",
-      "iconPath": "images/console-entrance.png",
-      "selectedIconPath": "images/console-entrance.png"
-    },
-    {
-      "pagePath": "pages/end/end",
-      "text": "结束",
-      "iconPath": "images/console-entrance.png",
-      "selectedIconPath": "images/console-entrance.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "开始",
+        "iconPath": "images/footer-icon-01-active.png",
+        "selectedIconPath": "images/footer-icon-01-active.png"
+      },
+      {
+        "pagePath": "pages/end/end",
+        "text": "结束",
+        "iconPath": "images/footer-icon-01-active.png",
+        "selectedIconPath": "images/footer-icon-01-active.png"
+      }
+    ]
   }
 }
