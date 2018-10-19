@@ -1,0 +1,30 @@
+<!--pages/main/main.wxml-->
+<view class='main-container'>
+  <view class='user-info'>
+    <button 
+      open-type='getUserInfo' 
+      class="user-info-avatar" 
+    ></button>
+  </view>
+  <view class='note-box'>
+    <view class='note-box-item-group'>
+      tags
+    </view>
+    <view 
+      class='note-box-item'
+      wx:for="{{noteItems}}"
+      wx:key="{{index}}"
+    >
+      <view>{{item.noteTitle}}</view> 
+      <view>{{item.noteContent}}</view>
+      <view>content</view>
+    </view>
+  </view>
+  <view class='note-box'>
+    <view class='note-box-item'>
+      <text>time</text> 
+      <text>title</text>
+      <view>content</view>
+    </view>
+  </view>
+</view>

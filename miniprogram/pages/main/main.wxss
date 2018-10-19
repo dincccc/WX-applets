@@ -1,0 +1,28 @@
+/* pages/main/main.wxss */
+.user-info{
+  border-bottom: 2rpx solid #ccc;
+}
+.user-info-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: rgb(17, 173, 201);
+}
+.note-box{
+  margin: 10rpx auto;
+  width: 96%;
+  border-radius: 10rpx;
+  background: rgba(183, 221, 226, 0.863);
+}
+.note-box-item-group,.note-box-item{
+  padding: 10rpx 20rpx;
+}
+.note-box-item-group{
+  font-size: 14px;
+  border-bottom: 2rpx solid #fff;
+}
+.note-box-item{
+  border-bottom: 2rpx solid #ccc;
+}

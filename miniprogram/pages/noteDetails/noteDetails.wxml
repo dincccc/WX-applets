@@ -1,0 +1,3 @@
+<!--pages/noteDetails/noteDetails.wxml-->
+<button bindtap="getSomething">ClickHere</button>
+<text>{{text}}</text>
