@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "欃の方士",
+  "navigationBarBackgroundColor": "#ccfdde",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+
+}

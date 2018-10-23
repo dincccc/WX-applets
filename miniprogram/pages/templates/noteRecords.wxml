@@ -1,0 +1,10 @@
+<template name="banner">
+  <view class="theWorld" >{{title}}</view>
+</template>
+
+<template name="example-item" >
+  <view class='item-box' >
+    <view class='item-title' style='background: {{exBackcolor}}'>{{exTitle}}</view>
+    <text class='item-info'>{{exInfo}}</text>
+  </view>
+</template>

@@ -1,0 +1,33 @@
+.theWorld{
+  color: rgb(27, 130, 161);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+/* example-item */
+
+.item-box{
+  display: inline-block;
+  margin-right: 20rpx;
+  text-align: center;
+  width: 460rpx;
+  height: 260rpx;
+}
+.item-box:last-child{
+  margin-right: 0;
+}
+.item-title{
+  width: 100%;
+  height: 100%;
+  line-height: 260rpx;
+  border-radius: 10rpx;
+}
+.item-info{
+  display: block;
+  font-size: .8rem;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

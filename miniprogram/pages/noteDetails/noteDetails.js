@@ -5,26 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
-    text: []
+    banners: [{
+        productid: 1,
+        title: "NOX-MAN",
+        background: 'red',
+      },
+      {
+        productid: 2,
+        title: "FOX-CASH",
+        background: 'rgb(162,200,20)',
+      },
+      {
+        productid: 3,
+        title: "DOS-LIAS",
+        background: 'rgb(233,122,45)',
+      }
+    ], //初始化一个 banners 数组
+    //以下四项设置 swiper 组件的参数值
+    indicatorDots: true,
+    indicatorColor: 'rgba(0,0,0,.3)',
+    autoplay: true, //开启自动切换
+    interval: 5000, //自动切换时间间隔
+    duration: 1000, //滑动动画时长
+    exampleItems: [{
+      exTitle: 'LOXning',
+      exBackcolor: '#ccc',
+      exLink: '',
+      exInfo: "lorem for wx i can't use,so bad!And you know nothing Jhon Snow"
+    }, {
+      exTitle: 'FOEker',
+      exBackcolor: 'blue',
+      exLink: '',
+      exInfo: "lorem for wx i can't use,so bad!"
+    }, {
+      exTitle: 'XALrrr',
+      exBackcolor: '#fe5edd',
+      exLink: '',
+      exInfo: "lorem for wx i can't use,so bad!"
+    }, {
+      exTitle: 'LORemem',
+      exBackcolor: 'yellow',
+      exLink: '',
+      exInfo: "lorem for wx i can't use,so bad!"
+    }]
+
   },
   /**
-   * 测试获取
+   * 测试获取远程数据
    */
   getSomething: function() {
-    // wx.request({
-    //   url: 'https://xxx',
-    //   data: {
-        
-    //   },
-    //   header: {
-    //     'content-type': 'application/json'
-    //   },
-    //   success: function(res){
-    //     this.setData({
-    //       text: res.data
-    //     })
-    //   }
-    // })
+
   },
   /**
    * 生命周期函数--监听页面加载

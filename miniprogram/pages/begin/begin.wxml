@@ -1,19 +1,33 @@
 <!--miniprogram/pages/begin/begin.wxml-->
 <view class="container">
   <view class="add-new-item">
-    <input type="text" class="add-input" placeholder='Thunder' bindinput="inputSomething" confirm-type='done' maxlength='18' value="{{inputVal}}"></input>
+    <input 
+      type="text" 
+      class="add-input" 
+      placeholder='Thunder' 
+      bindinput="inputSomething" 
+      confirm-type='done' 
+      maxlength='18' 
+      value="{{inputVal}}">
+    </input>
     <button type="primary" bindtap="addNewItem">+</button>
   </view>
   <view class="item-list" >
-
-    <view class="item" wx:for="{{items}}" wx:key="{{index}}">
-      <view>
+    <view 
+      class="item" 
+      wx:for="{{items}}" 
+      wx:key="{{index}}">
+    <view>
         <view style='text-align:left;font-size: .5rem;line-height: .5rem;'>
         {{item.time}}
         </view>
         <view>{{item.note}} ||备注</view> 
       </view>
-      <image data-index="{{index}}" src="../../images/icon-arrowdown.png" bindtap="removeNote"></image>
+      <image 
+        data-index="{{index}}" 
+        src="../../images/icon-arrowdown.png" 
+        bindtap="removeNote">
+      </image>
     </view>
     <view class="item" wx:if="{{items.length===0}}">
       <text>暂无数据</text> 
