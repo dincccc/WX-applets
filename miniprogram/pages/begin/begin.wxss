@@ -36,13 +36,20 @@
   align-items: center;
   margin: 10rpx 0;
   padding: 20rpx;
-  height: 2.5rem;
-  line-height: 2rem;
+  height: 2rem;
+  line-height: 1.3rem;
   border-radius: 8rpx;
   background: #0b7baf;
   color: rgb(239, 241, 233);
   text-align: left;
 
+}
+.item-note-text{
+  width: 520rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: .8rem;
 }
 .item image{
     width: 40rpx;

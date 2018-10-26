@@ -12,6 +12,8 @@
 exports.main = (event, context) => {
   console.log(event)
   console.log(context)
+  console.log(event.userInfo.openId)
+  console.log("天下无双")
 
   // 可执行其他自定义逻辑
   // console.log 的内容可以在云开发云函数调用日志查看
@@ -19,5 +21,6 @@ exports.main = (event, context) => {
   return {
     openid: event.userInfo.openId,
   }
+
 
 }

@@ -7,7 +7,7 @@
       placeholder='Thunder' 
       bindinput="inputSomething" 
       confirm-type='done' 
-      maxlength='18' 
+      maxlength='40' 
       value="{{inputVal}}">
     </input>
     <button type="primary" bindtap="addNewItem">+</button>
@@ -17,14 +17,16 @@
       class="item" 
       wx:for="{{items}}" 
       wx:key="{{index}}">
-    <view>
+      <view>
         <view style='text-align:left;font-size: .5rem;line-height: .5rem;'>
-        {{item.time}}
+          {{item.note_time}}
         </view>
-        <view>{{item.note}} ||备注</view> 
+        <view class="item-note-text">
+         {{item.note_title}} ||{{item.note_content}}
+        </view> 
       </view>
       <image 
-        data-index="{{index}}" 
+        data-index="{{item._id}}" 
         src="../../images/icon-arrowdown.png" 
         bindtap="removeNote">
       </image>
