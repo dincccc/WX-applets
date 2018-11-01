@@ -14,11 +14,45 @@
     </view>
   </view>
   
-  <!-- open begin page -->
-  <view class="uploader">
-    <navigator url="../begin/begin" open-type="navigate" class="uploader-text">
-      <text>打开begin界面</text>
-    </navigator>
-  </view>
+  <view class="box-group-out"> <!-- 外层 -->
+    <text>LOREM>></text>
+    <view class="box-group-inner"> <!-- 内层 一行 -->
+      <!-- 单个入口 ↓ -->
+      <!-- open begin page -->
+        <navigator url="../begin/begin" open-type="navigate" class='box'>
+          <icon type="warn" ></icon>
+          <text>打开begin界面</text>
+        </navigator>   
+      <!-- open begin page -->
+        <navigator url="../begin/begin" open-type="navigate" class='box'>
+          <icon type="warn" ></icon>
+          <text>打开begin界面</text>
+        </navigator>
+      <!-- open begin page -->
+        <navigator url="../begin/begin" open-type="navigate" class='box'>
+          <icon type="warn" ></icon>
+          <text>打开begin界面</text>
+        </navigator>
+    </view>
+    <view class="box-group-inner"> <!-- 内层 一行 -->
+      <!-- 单个入口 ↓ -->
+      <view class="box">   <!-- open begin page -->
+        <navigator url="../begin/begin" open-type="navigate">
+          <icon type="success"></icon>
+          <text>打开begin界面</text>
+        </navigator>
+      </view>
+      <view class="box">  <!-- open begin page -->
+        <navigator url="../begin/begin" open-type="navigate">
+          <text>打开begin界面</text>
+        </navigator>
+      </view>
+      <view class="box">  <!-- open begin page -->
+        <navigator url="../begin/begin" open-type="navigate">
+          <text>打开begin界面</text>
+        </navigator>
+      </view>
+    </view>
+  </view>  
 
 </view>

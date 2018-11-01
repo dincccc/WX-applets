@@ -4,7 +4,10 @@
     "pages/index/index",
     "pages/main/main",
     "pages/noteDetails/noteDetails",
-    "pages/begin/begin"
+    "pages/begin/begin",
+    "pages/chanIndex/chanIndex",
+    "pages/changMap/changMap",
+    "pages/chanMyself/chanMyself"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -15,19 +18,31 @@
   },
   "tabBar": {
     "color": "#000",
-    "selectedColor": "yellow",
+    "selectedColor": "red",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "开始",
-        "iconPath": "images/footer-icon-04.png",
-        "selectedIconPath": "images/footer-icon-04-active.png"
+        "text": "首页",
+        "iconPath": "c-imgs/index-icon.png",
+        "selectedIconPath": "c-imgs/index-icon.png"
       },
       {
-        "pagePath": "pages/main/main",
-        "text": "结束",
-        "iconPath": "images/footer-icon-02.png",
-        "selectedIconPath": "images/footer-icon-02-active.png"
+        "pagePath": "pages/chanIndex/chanIndex",
+        "text": "c首页",
+        "iconPath": "c-imgs/index-icon.png",
+        "selectedIconPath": "c-imgs/index-icon.png"
+      },
+      {
+        "pagePath": "pages/changMap/changMap",
+        "text": "地图",
+        "iconPath": "c-imgs/map-icon.png",
+        "selectedIconPath": "c-imgs/map-icon.png"
+      },
+      {
+        "pagePath": "pages/chanMyself/chanMyself",
+        "text": "我的",
+        "iconPath": "images/footer-icon-04.png",
+        "selectedIconPath": "images/footer-icon-04-active.png"
       }
     ]
   }

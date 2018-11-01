@@ -1,0 +1,10 @@
+<!--pages/chanIndex/chanIndex.wxml-->
+<view class="container">
+  <view class="search-bar">
+    <icon class="search-icon" type="search" size='20' style="{{searchStyleIcon}}"></icon>
+    <input class="search-input" placeholder="搜索门票/住宿/特产" bindfocus="backLeft" bindblur="backCenter" style="{{searchStyleInput}}"></input>
+  </view>
+  <swiper class="carousel" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" circular="true">
+      
+  </swiper>
+</view>
