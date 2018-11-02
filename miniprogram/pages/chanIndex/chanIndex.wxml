@@ -1,10 +1,37 @@
 <!--pages/chanIndex/chanIndex.wxml-->
 <view class="container">
   <view class="search-bar">
-    <icon class="search-icon" type="search" size='20' style="{{searchStyleIcon}}"></icon>
-    <input class="search-input" placeholder="搜索门票/住宿/特产" bindfocus="backLeft" bindblur="backCenter" style="{{searchStyleInput}}"></input>
+    <icon class="search-icon" type="search" size="18"></icon>
+    <input class="search-input" placeholder="搜索门票/住宿/特产" placeholder-style="text-align: center;"></input>
   </view>
-  <swiper class="carousel" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" circular="true">
-      
+  <swiper 
+    class="carousel" 
+    indicator-dots="true" 
+    indicator-color="rgba(134,217,64,.4)" 
+    indicator-active-color="rgba(134,217,64,1)" 
+    circular="true"
+    autoplay="true"
+    interval="5000"
+    duration="500">
+
+      <block wx:for="{{carBox}}" wx:key="{{index}}">
+        <swiper-item>
+          <navigator url="{{item.linkTo}}" open-type="navigate">
+            <image src="{{item.imgUrl}}" alt="{{item.imgAlt}}"></image>
+          </navigator>
+        </swiper-item>
+      </block>
   </swiper>
+
+  <view class="section-entry">
+    <block wx:for="{{fourItems}}" wx:key="index">
+      <navigator url="{{item.url}}" open-type="navigate">
+        <view class="section-item">
+          <image src="{{item.imgUrl}}"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
 </view>
